@@ -17,6 +17,7 @@
         <title>Chess_by_Rishab</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "shortcut icon" type = "image/png" href = "../Icons/letter-r.png"
 
         <!-- CSS Code -->
         <style>
@@ -221,6 +222,16 @@
 
         <!-- JavaScript Code -->
         <script>
+
+            let docTitle = document.title ;
+            
+            window.addEventListener("blur", () => {
+                document.title = "Thanks For Visiting - Rishab" ;
+            }) ;
+
+            window.addEventListener("focus", () => {
+                document.title = docTitle ;
+            }) ;
 
 
             // Inserting the Images.
